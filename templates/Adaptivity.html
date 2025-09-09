@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-adapt: Increase Your Adaptivity</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .measures-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .measures-section h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .measures-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .measures-section li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .image-container img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 15px;
+            }
+            .measures-section h2 {
+                font-size: 1.5rem;
+            }
+            .measures-section li {
+                font-size: 0.9rem;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">e-adapt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict">Predict Adaptivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/adapt">Increase Adaptivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resources">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Increase Your Adaptivity</h1>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="measures-section">
+                    <h2>For Parents</h2>
+                    <ul>
+                        <li>Create a distraction-free learning environment with reliable internet and device access to enhance engagement.</li>
+                        <li>Establish a consistent study schedule, aligning with e-adapt’s real-time LMS tracking for optimal task completion.</li>
+                        <li>Encourage participation in online peer discussions to boost collaboration, as recommended by e-adapt’s RL interventions.</li>
+                        <li>Monitor your child’s progress using e-adapt’s adaptivity predictions and tailored support plans.</li>
+                        <li>Promote a growth mindset by celebrating milestones with e-adapt’s gamified badges (Bronze, Silver, Gold).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="measures-section">
+                    <h2>For Faculty Mentors</h2>
+                    <ul>
+                        <li>Design interactive online activities to increase engagement, informed by e-adapt’s LMS data insights.</li>
+                        <li>Provide timely feedback based on e-adapt’s adaptivity predictions to address individual student needs.</li>
+                        <li>Use e-adapt’s RL interventions to offer personalized resources, such as time management workshops for moderate adaptivity students.</li>
+                        <li>Foster peer-to-peer learning through group activities, reducing dropout rates by 16% (Salloum et al., 2024).</li>
+                        <li>Leverage e-adapt’s explainable AI (SHAP/LIME) to understand factors like internet reliability affecting performance.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="measures-section">
+                    <h2>For Students</h2>
+                    <ul>
+                        <li>Set up a dedicated study space with stable internet, aligning with e-adapt’s LMS tracking for better focus.</li>
+                        <li>Use e-adapt’s personalized interventions to prioritize tasks and improve time management.</li>
+                        <li>Engage actively in online classes and discussions to enhance adaptivity, as tracked by e-adapt’s ensemble model.</li>
+                        <li>Take regular breaks to maintain focus, supported by e-adapt’s gamified rewards to boost motivation.</li>
+                        <li>Seek support from peers or faculty through e-adapt’s tailored recommendations for low adaptivity levels.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://www.viewsonic.com/library/wp-content/uploads/2020/07/LB0144.jpeg" alt="Online Learning Environment">
+            <img src="https://modernstudies.edu.np/wp-content/uploads/2021/01/Now-feature-DistanceLearning-1024x576.png" alt="Distance Learning">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 e-adapt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

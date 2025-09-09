@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-adapt: Learning Resources</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .resource-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .resource-section h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .resource-section p, .resource-section li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .resource-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 15px;
+            }
+            .resource-section h2 {
+                font-size: 1.5rem;
+            }
+            .resource-section p, .resource-section li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">e-adapt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict">Predict Adaptivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/adapt">Increase Adaptivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/resources">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Learning Resources</h1>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="container">
+        <div class="resource-section">
+            <h2>Understanding Online Education</h2>
+            <p>Online education offers flexibility and accessibility, enabling students to learn from anywhere. e-adapt enhances this by using real-time LMS data (e.g., login frequency, task completion) to predict adaptivity and provide personalized support. Success hinges on factors like internet reliability, device access, and self-discipline, which e-adapt’s ensemble model analyzes to deliver tailored interventions.</p>
+            <p>Adaptive learning technologies, like those in e-adapt, personalize content based on student performance, improving engagement and reducing dropout rates by 16% (Salloum et al., 2024). This section provides resources to understand and thrive in online learning environments.</p>
+        </div>
+
+        <div class="resource-section">
+            <h2>The Role of Adaptivity in Online Learning</h2>
+            <p>Adaptivity refers to tailoring learning experiences to individual needs using AI and data analytics. e-adapt’s ensemble model (GBM, SVM, TCN) achieves over 92% accuracy in predicting adaptivity levels (low, moderate, high), enabling targeted interventions like time management workshops or peer support, as per RL strategies (Section 3.3.3, ML project.docx).</p>
+            <p>Benefits include higher engagement, better retention, and inclusivity for diverse learners. Challenges, such as data privacy and infrastructure needs, are addressed through e-adapt’s explainable AI (SHAP/LIME), which clarifies factors like internet type impacting performance.</p>
+        </div>
+
+        <div class="resource-section">
+            <h2>Case Studies on Adaptivity in Online Education</h2>
+            <ul>
+                <li><strong>Arizona State University (2024)</strong>: Implemented an AI-driven adaptive platform for math courses, increasing pass rates by 14% and reducing dropouts by 10%, aligning with e-adapt’s personalized approach (Salloum et al., 2024).</li>
+                <li><strong>Khan Academy (2023)</strong>: Used adaptive exercises to adjust content difficulty, improving subject mastery for 88% of users, especially underserved students, complementing e-adapt’s gamification (Zhang et al., 2023).</li>
+                <li><strong>University of Queensland (2024)</strong>: Piloted real-time feedback for psychology students, boosting engagement by 22% and grades by 12%, similar to e-adapt’s LMS integration (Section 3.1).</li>
+                <li><strong>Open University UK (2023)</strong>: Integrated adaptive tools for time management, improving course completion by 75% for remote learners, mirroring e-adapt’s RL interventions (Smith et al., 2023).</li>
+            </ul>
+        </div>
+
+        <div class="resource-section">
+            <h2>Articles & Guides</h2>
+            <ul>
+                <li><a href="https://www.edutopia.org/article/creating-effective-online-study-schedule" target="_blank">Guide to Creating an Effective Online Study Schedule</a> – Aligns with e-adapt’s time management interventions.</li>
+                <li><a href="https://www.coursera.org/articles/tech-skills-for-online-learning" target="_blank">Top 10 Tips for Improving Tech Skills for Online Learning</a> – Supports device and internet requirements.</li>
+                <li><a href="https://www.khanacademy.org/resources/staying-motivated" target="_blank">How to Stay Motivated in Virtual Classrooms</a> – Complements e-adapt’s gamified badges.</li>
+                <li><a href="https://www.insidehighered.com/digital-learning/article/understanding-lms" target="_blank">Understanding Learning Management Systems (LMS)</a> – Explains platforms like e-adapt’s data source.</li>
+                <li><a href="https://www.edweek.org/overcoming-online-learning-challenges" target="_blank">Strategies for Overcoming Online Learning Challenges</a> – Addresses barriers like load-shedding.</li>
+                <li><a href="https://www.forbes.com/sites/future-of-adaptive-learning/2024" target="_blank">The Future of Adaptive Learning Technologies</a> – Discusses AI advancements like e-adapt.</li>
+            </ul>
+        </div>
+
+        <div class="resource-section">
+            <h2>Tutorials</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=study-space-setup" target="_blank">Video Tutorial: Setting Up a Distraction-Free Study Space</a> – Enhances e-adapt’s adaptivity recommendations.</li>
+                <li><a href="https://support.zoom.us/hc/en-us/articles/using-zoom" target="_blank">Step-by-Step Guide to Using Zoom Effectively</a> – Supports virtual class participation.</li>
+                <li><a href="https://support.google.com/edu/classroom" target="_blank">Introduction to Google Classroom for Students</a> – Aligns with LMS integration.</li>
+                <li><a href="https://www.lifewire.com/troubleshoot-internet-issues" target="_blank">Basic Troubleshooting for Internet Connectivity Issues</a> – Addresses network type challenges.</li>
+                <li><a href="https://www.smartsparrow.com/how-to" target="_blank">How to Use Adaptive Learning Tools Like Smart Sparrow</a> – Complements e-adapt’s AI approach.</li>
+                <li><a href="https://www.todoist.com/guide/time-management" target="_blank">Tutorial on Managing Time with Online Study Apps</a> – Supports RL interventions.</li>
+            </ul>
+        </div>
+
+        <div class="resource-section">
+            <h2>Tools & Resources</h2>
+            <ul>
+                <li><a href="https://www.coursera.org" target="_blank">Free Online Courses from Coursera</a> – Offers adaptive learning content.</li>
+                <li><a href="https://www.edx.org" target="_blank">edX Open Courses</a> – Provides flexible learning options.</li>
+                <li><a href="https://www.notion.so" target="_blank">Notion</a> and <a href="https://trello.com" target="_blank">Trello</a> – Productivity tools for task management.</li>
+                <li><a href="https://www.oercommons.org" target="_blank">Open Educational Resources (OER)</a> – Free resources for diverse learners.</li>
+                <li><a href="https://www.dreambox.com" target="_blank">DreamBox Learning</a> – Adaptive math platform, similar to e-adapt’s approach.</li>
+                <li><a href="https://www.educationalpodcasts.com" target="_blank">Educational Podcasts on Online Learning Trends</a> – Insights into adaptive technologies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 e-adapt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
